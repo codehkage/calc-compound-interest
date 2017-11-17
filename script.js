@@ -10,12 +10,13 @@ window.onload = function() {
             compoundInt.push(Math.floor(init_amount));
         }
         // return ;
-        for (var i = 0; i < compoundInt.length; i++) {
-            final = parseInt(compoundInt[i]);
-        }
+        compoundInt.forEach(function(element) {
+            final = element;
+        })
         var answr = final - temp;
         return compoundInt + " and final anser is N" + answr;
     }
+
 
     function find() {
         var parseAmount = document.getElementById('amount').value;
